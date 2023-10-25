@@ -1,0 +1,226 @@
+.header {
+   position: absolute;
+   width: 100%;
+   top: 0;
+   left: 0;
+   min-height: 40px;
+
+   &__wrapper {
+      position: fixed;
+      width: 100%;
+      left: 0;
+      top: 0;
+      z-index: 100;
+      background: #fff;
+      transition: all .3s ease-in-out;
+   }
+   &__body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 80px;
+      position: relative;
+      transition: all .3s ease-in-out;
+   }
+   &.scroll{
+      .header__wrapper{
+         background: #0172f0;
+      }
+      .header__body{
+         min-height: 60px;
+      }
+      .header__logo{
+         svg{
+            width: 160px;
+            fill: #fff;
+         }
+         @media(any-hover: hover){
+            &:hover{
+               svg{
+                  fill: #eee;
+               }
+            }
+         }
+      }
+      .header__link{
+         color: #fff;
+         position: relative;
+         // &:before{
+         //    content: '';
+         //    position: absolute;
+         //    bottom: -5px;
+         //    left: 50%;
+         //    transform: translateX(-50%);
+         //    width: 0;
+         //    height: 3px;
+         //    border-radius: 10px;
+         //    background: #fff;
+         //    pointer-events: none;
+         //    transition: width .3s ease;
+         // }
+         // @media(any-hover: hover){
+         //    &:hover{
+         //       &:before{
+         //          width: 12px;
+         //       }
+         //    }
+         // }
+      }
+      .header-search__btn{
+         color: #fff;
+      }
+      .header__btn{
+         color: #fff;
+         border-color: #fff;
+
+         @media(any-hover: hover){
+            &:hover{
+               background: #fff;
+               color: #0172f0;
+            }
+         }
+         &_login{
+            background: #fff;
+            color: #0172f0;
+            @media(any-hover: hover){
+               &:hover{
+                  background: #0172f0;
+                  color: #fff;
+               }
+            }
+         }
+      }
+   }
+
+   &__main{
+      display: flex;
+      align-items: center;
+   }
+
+   &__logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg{
+         width: 170px;
+         height: 60px;
+         transition: all .3s ease-in-out;
+         fill: #111;
+      }
+
+      @media(any-hover: hover){
+         &:hover{
+            svg{
+               fill: #2a2a2a;
+            }
+         }
+      }
+   }
+   &__nav{
+      margin: 0px 40px 0px 0px;
+   }
+   &__list{
+      display: flex;
+      align-items: center;
+      gap: 30px;
+   }
+   &__link{
+      font-size: 16px;
+      font-weight: 500;
+      color: #2a2a2a;
+      transition: all .3s ease-in-out;
+
+      @media(any-hover: hover){
+         &:hover{
+            color: #0172f0;
+         }
+      }
+   }
+
+   &__search{
+      
+   }
+   
+
+
+   &__buttons{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+   }
+   &__btn{
+      height: 42px;
+      padding: 0 22px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 500;
+      border: 3px solid #0172f0;
+      background: transparent;
+      color: #0172f0;
+      transition: all .3s ease-in-out;
+
+      @media(any-hover: hover){
+         &:hover{
+            background: #0172f0;
+            color: #fff;
+         }
+      }
+
+      &_login{
+         background: #0172f0;
+         color: #fff;
+
+         @media(any-hover: hover){
+            &:hover{
+               background: transparent;
+               color: #0172f0;
+            }
+         }
+      }
+   }
+}
+
+.header-search{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0px 20px 0px 0px;
+   &__btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      color: #0172f0;
+      transition: all .3s ease-in-out;
+      &:before{
+         content: '';
+         position: absolute;
+         bottom: -5px;
+         left: 50%;
+         transform: translateX(-50%);
+         width: 25%;
+         height: 3px;
+         border-radius: 10px;
+         background: currentColor;
+         pointer-events: none;
+         transition: width .3s ease;
+      }
+      svg{
+         width: 30px;
+         height: 30px;
+         fill: transparent;
+         stroke: currentColor;
+         stroke-width: 3;
+         stroke-linecap: round;
+         stroke-linejoin: round;
+      }
+
+      @media(any-hover: hover){
+         &:hover{
+            &:before{
+               width: 60%;
+            }
+         }
+      }
+   }
+}

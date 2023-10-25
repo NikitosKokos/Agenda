@@ -1,0 +1,70 @@
+// base
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/fonts";
+// @import "./base/icons"; 
+@import "./base/zeroing";
+@import "./base/popup";
+// @import "./base/burger";
+@import "./base/ui";
+// libs
+// @import "./libs/swiper-bundle.min";
+// blocks
+@import "./blocks/header";
+@import "./blocks/footer";
+@import "./blocks/hero";
+
+
+// global styles
+.container {
+	max-width: $width + px;
+	margin: 0 auto;
+	// padding: 0 15px;
+	// @media (max-width: $md1+px) {
+	// 	max-width: 970px;
+	// }
+	// @media (max-width: $md2+px) {
+	// 	max-width: 750px;
+	// }
+	// @media (max-width: $md3+px) {
+	// 	max-width: none;
+	// }
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+body{
+	&._lock{
+		overflow: hidden;
+	}
+}
+
+// ::selection {
+	
+// }
+
+// ::-webkit-scrollbar {
+// 	width: ;
+// }
+// ::-webkit-scrollbar-track {
+// 	background: $;
+// }
+// ::-webkit-scrollbar-thumb {
+// 	background: $;
+// }
+// ::-webkit-scrollbar-thumb:hover {
+// 	background: $;
+// }
+
+// media
+@import "./base/media";
