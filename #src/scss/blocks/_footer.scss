@@ -1,0 +1,104 @@
+.footer {
+   &__container {
+   }
+
+   &__body {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 0px 20px 0px 0px;
+   }
+
+   &__info {
+      flex: 0 0 30%;
+   }
+
+   &__logo {
+      margin: 0px 0px 5px 0px;
+      svg{
+         width: 170px;
+         height: 60px;
+         transition: all .3s ease-in-out;
+         fill: #0172f0;
+      }
+   }
+
+   &__descr {
+      color: #878787;
+      font-size: 16px;
+      line-height: 1.4;
+      margin: 0px 0px 20px 0px;
+   }
+
+   &__social{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+   }
+
+   &__icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #0172f0;
+      transition: all .3s ease-in-out;
+
+      svg{
+         width: 35px;
+         height: 35px;
+         fill: transparent;
+         stroke: currentColor;
+         stroke-width: 2; 
+         stroke-linecap: round; 
+         stroke-linejoin: round;
+      }
+
+      @media(any-hover: hover){
+         &:hover{
+            color: #62adf6;
+         }
+      }
+   }
+
+   &__item {
+   }
+
+   &__title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #0172f0;
+      text-transform: uppercase;
+      margin: 0px 0px 20px 0px;
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+   }
+
+   &__link {
+      font-size: 16px;
+      color: #878787;
+      transition: all .3s ease-in-out;
+
+      @media(any-hover: hover){
+         &:hover{
+            color: #0172f0;
+         }
+      }
+   }
+
+   &__bottom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 50px 0px 0px 0px;
+      padding: 25px 0px 25px 0px;
+      border-top: 1px solid #c0c0c0;
+   }
+
+   &__copy {
+      color: #c0c0c0;
+   }
+}
