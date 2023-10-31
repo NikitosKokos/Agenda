@@ -8,7 +8,7 @@
   } @else {
     display: -webkit-box;
     display: -moz-box;
-    display: box;
+    // display: box;
     -webkit-line-clamp: $n;
     -moz-line-clamp: $n;
     line-clamp: $n;

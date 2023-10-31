@@ -15,6 +15,7 @@
 @import "./blocks/hero";
 @import "./blocks/headlines";
 @import "./blocks/news";
+@import "./blocks/article";
 
 
 // global styles
@@ -36,7 +37,7 @@
 .wrapper {
 	width: 100%;
 	min-height: 100%;
-	overflow: hidden;
+	// overflow: hidden;
 	display: flex;
 	flex-direction: column;
 }
