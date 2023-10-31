@@ -1361,9 +1361,6 @@ h6 {
 }
 
 .article__sidebar {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 30%;
-          flex: 0 0 30%;
   position: sticky;
   display: block;
   top: 80px;
@@ -1586,8 +1583,9 @@ h6 {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1340px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .wrapper {
