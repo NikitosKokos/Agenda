@@ -65,7 +65,7 @@ function browserSync(params) {
 function html() {
    return src(path.src.html)
       .pipe(fileinclude())
-      .pipe(webphtml())
+      // .pipe(webphtml())
       .pipe(dest(path.build.html))
       .pipe(browsersync.stream());
 }
@@ -83,7 +83,7 @@ function css() {
             cascade: true,
          }),
       )
-      .pipe(webpcss())
+      // .pipe(webpcss())
       .pipe(dest(path.build.css))
       .pipe(clean_css())
       .pipe(
@@ -149,13 +149,13 @@ function svgSprites() {
 
 function images() {
    return src(path.src.img)
-      .pipe(
-         webp({
-            quality: 70,
-         }),
-      )
-      .pipe(dest(path.build.img))
-      .pipe(src(path.src.img))
+      // .pipe(
+      //    webp({
+      //       quality: 70,
+      //    }),
+      // )
+      // .pipe(dest(path.build.img))
+      // .pipe(src(path.src.img))
       .pipe(
          imagemin({
             progressive: true,
