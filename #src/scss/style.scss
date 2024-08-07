@@ -52,9 +52,12 @@ body{
 	}
 }
 
-// ::selection {
-	
-// }
+
+
+::selection {
+	background: #1F90FF;
+	color: #fff;
+}
 
 // ::-webkit-scrollbar {
 // 	width: ;
